@@ -1,10 +1,14 @@
-# 8. Return a New List with Distinct Elements from a List
-# Sample List : [1,2,3,3,3,3,4,5]
+# 9. Check Whether a Number is Prime
 
-def unique_list(list):
-    list_uniq = [nums if nums not in list_uniq else continue 
-                 for nums in list
-                 ]
-    return list_uniq
-
-print(unique_list([1,2,3,3,3,3,4,5]))
+def prime(n):
+    divisors = [2, 3, 5, 7]
+    if n in divisors:
+        return 'Prime'
+    else:
+        check = [n % i for i in divisors]
+        if 0 in check:
+            return "Not prime"
+        else:
+            return "Prime"
+            
+print(prime(53))
