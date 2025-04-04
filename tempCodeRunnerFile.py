@@ -1,10 +1,10 @@
-# 5. Factorial of a Number
+# 8. Return a New List with Distinct Elements from a List
+# Sample List : [1,2,3,3,3,3,4,5]
 
-def fatora(n):
-    result = 1
-    while n > 0:
-        result *= n
-        n -= 1
-    return result
+def unique_list(list):
+    list_uniq = [nums if nums not in list_uniq else continue 
+                 for nums in list
+                 ]
+    return list_uniq
 
-print(fatora(10))
+print(unique_list([1,2,3,3,3,3,4,5]))
